@@ -1,0 +1,7 @@
+matplotlib
+numpy
+requests
+ase>=3.22.1
+torch>=2.2.1
+rdkit>=2023.09.6
+py3Dmol>=2.1.0
