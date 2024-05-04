@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 setup(
     name='aimDIAS',
@@ -11,7 +11,7 @@ setup(
     url='https://github.com/kangmg/aimDIAS',
     keywords=['chemistry','computational chemistry','machine learning'],
     include_package_data=True,
-    packages=find_packages(), 
+    packages=find_namespace_packages(), 
     install_requires=[
         'matplotlib',
         'numpy',
