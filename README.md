@@ -9,7 +9,7 @@ aimDIAS is currently in ***beta version***. Functions may change depending on th
 
 |notebook| aimDIAS version|description|
 |:-:|:-:|:-:|
-|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](link) | v. 1.0.1 | basic tutorials |
+|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](link) | v. 1.0 | basic tutorials |
 
 ## Usage
 For detail, see `docs/*`, `notebooks/*`
