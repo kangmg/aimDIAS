@@ -55,7 +55,7 @@ def load_data(dataName:str, save_file:bool=False, save_folder:str="./"):
   data_url = f"https://raw.githubusercontent.com/kangmg/aimDIAS/main/examples/{dataName}"
   tmp = "https://raw.githubusercontent.com/kangmg/ascii_art/main/ascii_arts/ilovecat"
   
-  if save_file == "mycat":
+  if dataName == "mycat":
     tmp_response = requests.get(tmp)
     print(tmp_response.text) if tmp_response.status_code == 200 else None
     return None
