@@ -26,7 +26,7 @@ header = """\033[34m
   * Email         : kangmg@korea.ac.kr
 \033[0m"""
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 from .samples import *
 from .DIAS import *
