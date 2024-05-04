@@ -9,6 +9,10 @@ This code implements ASM & D/I analysis based on two reference papers
 1) Svatunek, D., & Houk, K. N. (2019). autoDIAS: a python tool for an automated distortion/interaction activation strain analysis. Journal of Computational Chemistry (Vol. 40, Issue 28, pp. 2509–2515). Wiley. https://doi.org/10.1002/jcc.26023
 2) van Zeist, W.-J., & Bickelhaupt, F. M. (2010). The activation strain model of chemical reactivity. Organic & Biomolecular Chemistry (Vol. 8, Issue 14, p. 3118). Royal Society of Chemistry (RSC). https://doi.org/10.1039/b926828f
 
+More informations about AIMNet2 models are:
+- Anstine D, Zubatyuk R, Isayev O. AIMNet2: A Neural Network Potential to Meet your Neutral, Charged, Organic, and Elemental-Organic Needs. ChemRxiv. 2024; doi:10.26434/chemrxiv-2023-296ch-v2
+
+
 Functions
 =========
 - models : shows list of available models
