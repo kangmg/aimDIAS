@@ -1,0 +1,12 @@
+aimDIAS/models/aimnet2_wb97m-d3_ens.jpt filter=lfs diff=lfs merge=lfs -text
+aimDIAS/models/aimnet2_b973c_ens.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_wb97m-d3_1.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_wb97m-d3_3.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_wb97m-d3_ens.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_b973c_0.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_b973c_1.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_b973c_2.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_b973c_3.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_b973c_ens.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_wb97m-d3_0.jpt filter=lfs diff=lfs merge=lfs -text
+models/aimnet2_wb97m-d3_2.jpt filter=lfs diff=lfs merge=lfs -text
