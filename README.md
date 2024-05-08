@@ -69,9 +69,7 @@ aimDIAS_run(trajFile="h2o.xyz",
   ```shell
   ### terminal ###
   git clone https://github.com/kangmg/aimDIAS
-  
-  # since `git clone` doesn't directly install git lfs files, it contains metadata only. You'll need to manually remove it. Models will be automatically downloaded.
-  rm path/to/aimDIAS/aimDIAS/models/*
+
   
   pip install -q -r path/to/aimDIAS/requirements.txt
   ```
