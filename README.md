@@ -1,3 +1,5 @@
+[![DOI](https://sandbox.zenodo.org/badge/795712401.svg)](https://sandbox.zenodo.org/doi/10.5072/zenodo.53479)
+
 ![image](https://github.com/kangmg/aimDIAS/assets/59556369/cb3a401d-6ea2-4a26-85e4-085c143d6485)
 
 aim(aimnet2) + DIAS(distortion interaction analysis)
