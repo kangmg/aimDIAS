@@ -115,4 +115,4 @@ kangmg@korea.ac.kr or [issue in github](https://github.com/kangmg/aimDIAS/issues
 - more sample data
 - fp enables support for string format
 - axis validation plot
-- add GPU mode
+- add multiprocessing mode
