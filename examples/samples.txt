@@ -1,7 +1,8 @@
-______________________________________________
-Data Name   |   Description
-____________|_________________________________          
-sn2.xyz     |   sn2 reaction 
-wittig.xyz  |   wittig reaction
-DA.xyz      |   diels alder reaction
-____________|_________________________________
+________________________________________________________
+Data Name         |   Description
+__________________|_____________________________________
+sn2.xyz           |   sn2 reaction 
+wittig.xyz        |   wittig reaction
+DA.xyz            |   diels alder reaction
+fluoroethane.xyz  |   unimolecular thermal decomposition
+__________________|_____________________________________
