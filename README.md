@@ -116,3 +116,4 @@ kangmg@korea.ac.kr or [issue in github](https://github.com/kangmg/aimDIAS/issues
 - fp enables support for string format
 - axis validation plot
 - add multiprocessing mode
+- ASE DeprecationWarning : `Atoms.set_calculator(calc) --> Atoms.cal = calc`
