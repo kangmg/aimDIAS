@@ -2,7 +2,7 @@
 
 ![image](https://github.com/kangmg/aimDIAS/assets/59556369/cb3a401d-6ea2-4a26-85e4-085c143d6485)
 
-aim(aimnet2) + DIAS(distortion interaction analysis)
+aim(AIMNet2) + DIAS(distortion interaction analysis)
 ---
 `aimDIAS` is a Python package compatible with IPython that enables SUPER-FAST Distortion Interaction Analysis (or activation strain analysis) using aimnet2 models.
 
