@@ -79,7 +79,9 @@ aimDIAS_run(trajFile="h2o.xyz",
 > ***pip***
 - 
   ```shell
-  pip install aimDIAS
+  pip install aimDIAS # old version
+
+  pip install git+https://github.com/kangmg/aimDIAS.git # current version
   ```
 
 > ***git clone***
