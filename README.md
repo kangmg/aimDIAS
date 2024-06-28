@@ -1,4 +1,5 @@
 ## TODO
+- compatibility with new version of aimnet2 
 - add auto_fragmentation
 - user-friendly fragmentation GUI
 - enhance the plot style for publication-quality
