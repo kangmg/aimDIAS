@@ -9,6 +9,7 @@
 - axis validation plot
 - add multiprocessing mode
 - ASE DeprecationWarning : `Atoms.set_calculator(calculator) --> Atoms.calc = calculator`
+- ASE version error : `steps=None` will returns error in lastest ase version e.g. optimize.run(fmax=fmax, steps=`None`)
 - implement autoNEB or reaction path finding method
 - aimDIAS with MD simulation
 
