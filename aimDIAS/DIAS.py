@@ -183,11 +183,11 @@ def potential_energy(fragment:ase.Atoms, charge=0, model:str="b973c")->float:
     - potential energy(float) : The potential energy of the molecular fragment.
   """
   Calculator = AIMNet2Calculator(load_model(model),charge=charge)
-  fragment.set_calculator(Calculator)
+  fragment.calc = Calculator
   return fragment.get_potential_energy()
 
 
-def Optimize(fragment:ase.Atoms, charge=0, model:str="b973c", fmax:float=0.05, steps=None, clear_log=False)->str:
+def Optimize(fragment:ase.Atoms, charge=0, model:str="b973c", fmax:float=0.05, steps=500, clear_log=False)->str:
   """
   Description
   -----------
@@ -199,7 +199,7 @@ def Optimize(fragment:ase.Atoms, charge=0, model:str="b973c", fmax:float=0.05, s
     - charge (int) : Charge of the fragment. Default is 0.
     - model (str, optional) : Name of the AIMNet2 model to use for optimization. Default is "b973c".
     - fmax (float , optional) : Maximum force threshold for convergence. Default is 0.05.
-    - steps (int, optional) : Maximum number of optimization steps. Default is None (unlimited).
+    - steps (int, optional) : Maximum number of optimization steps. Default is 500.
     - clear_log (bool, optional) : Whether to clear the output log in IPython environment after optimization. Default is False.
 
   Returns
@@ -207,7 +207,7 @@ def Optimize(fragment:ase.Atoms, charge=0, model:str="b973c", fmax:float=0.05, s
     - log(str) : optimization logging
   """
   Calculator = AIMNet2Calculator(load_model(model),charge=charge)
-  fragment.set_calculator(Calculator)
+  fragment.calc = Calculator
   optimize = BFGS(atoms=fragment)
   optimize.run(fmax=fmax, steps=steps)
 
