@@ -2,7 +2,7 @@ from setuptools import setup, find_namespace_packages
 
 setup(
     name='aimDIAS',
-    version='1.0.1',
+    version='1.1.0',
     author='Kang mingi',
     author_email='kangmg@korea.ac.kr',
     description='SUPER FAST D/I analysis with aimnet2',

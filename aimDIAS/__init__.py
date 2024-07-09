@@ -26,10 +26,10 @@ header = """\033[34m
   * Email         : kangmg@korea.ac.kr
 \033[0m"""
 
-__version__ = '1.0.2'
+__version__ = '1.1.0'
 
-from .samples import *
-from .DIAS import *
-from .utilities import *
-from .aimnet2ase import *
+from .samples import available_data, load_data
+from .DIAS import models, potential_energy, Optimize, read_traj, DIAS, DIASparser, trajDIAS, geometric_parameter, aimDIAS_run
+from .utilities import draw_xyz
+from .aimnet2ase import AIMNet2Calculator
 
