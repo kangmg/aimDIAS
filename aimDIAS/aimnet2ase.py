@@ -1,12 +1,12 @@
 # Copyright (c) 2023 Isayev Lab  @ Carnegie Mellon
 # Licensed under the MIT License.
-# Code Source : https://github.com/isayevlab/AIMNet2/blob/main/calculators/aimnet2ase.py
+# Code Source : https://github.com/isayevlab/AIMNet2
 
 import torch
 import torch.nn.functional as F
 import ase.calculators.calculator
+from ase.calculators.calculator import all_changes
 import numpy as np
-
 
 class AIMNet2Calculator(ase.calculators.calculator.Calculator):
     """ ASE calculator for AIMNet2 model
@@ -14,9 +14,8 @@ class AIMNet2Calculator(ase.calculators.calculator.Calculator):
         model (:class:`torch.nn.Module`): AIMNet2 model
         charge (int or float): molecular charge.  Default: 0
     """
-
     implemented_properties = ['energy', 'forces', 'free_energy', 'charges']
-
+    
     def __init__(self, model, charge=0):
         super().__init__()
         self.model = model
@@ -27,10 +26,10 @@ class AIMNet2Calculator(ase.calculators.calculator.Calculator):
         self._t_numbers = None
         self._t_charge = None
 
-    def do_reset(self):
+    def reset(self):
+        super().reset()
         self._t_numbers = None
         self._t_charge = None
-        self.charge = 0.0
 
     def set_charge(self, charge):
         self.charge = float(charge)
@@ -59,16 +58,13 @@ class AIMNet2Calculator(ase.calculators.calculator.Calculator):
         torch._C._set_grad_enabled(prev)
         return ret
 
-    def calculate(self, atoms=None, properties=['energy'],
-                  system_changes=ase.calculators.calculator.all_changes):
+    def calculate(self, atoms=None, properties=['energy'], system_changes=all_changes):
         super().calculate(atoms, properties, system_changes)
         _in = self._make_input()
         do_forces = 'forces' in properties
-        _out =  self._eval_model(_in, do_forces)
-
+        _out = self._eval_model(_in, do_forces)
+        
         self.results['energy'] = _out['energy']
         self.results['charges'] = _out['charges']
         if do_forces:
             self.results['forces'] = _out['forces']
-
-
